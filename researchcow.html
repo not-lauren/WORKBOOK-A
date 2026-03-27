@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Cow of Experimentation</title> 
+    <style>
+
+body{               
+            cursor: url('images/cow.png'), auto;
+            font-family: monospace;
+            color:hotpink;
+            background-image: url('images/background.png');
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+/*.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  flex: 1 1 1000px;
+  max-width: 400px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+.caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: hotpink; color: greenyellow;
+  padding: 0.5rem; transform: translateY(100%);
+  transition: 0.3s; font-size: 0.8rem;
+}
+.gallery-item:hover .caption {
+  transform: translateY(0);
+
+}*/
+.gallery {
+  column-count: 2;
+  column-gap: 1rem;
+}
+.gallery > * {
+  width: 100%;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+ 
+}
+caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: hotpink; color: greenyellow;
+  padding: 0.5rem; transform: translateY(100%);
+  transition: 0.3s; font-size: 0.8rem;
+}
+.gallery-item:hover .caption {
+  transform: translateY(0);
+}
+</style>
+</head>
+    
+<body>
+    <br>
+<h1> Cow Paddock</h1>
+<h2> Use the cow to learn more about the process of building this site.</h2>
+
+ <div class="gallery">
+
+  <div class="gallery-item">
+    <img src="images/Screenshot 2026-03-16 180648.png" alt="Code Snippet" >
+    <div class="caption">Screenshot of the home page development.</div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="images/Screenshot 2026-03-16 174930.png" alt="Gareth Cursor" >
+    <div class="caption">Original cursor idea for Workbook. </div>
+  </div>
+
+ <div class="gallery-item">
+    <img src="images/Screenshot 2026-03-19 185335.png" alt="Farm Development" >
+    <div class="caption">Early concept for the Farm. </div>
+  </div>
+
+ <div class="gallery-item">
+    <img src="images/IMG_3072.jpg" alt="farmer Development" width="300">
+    <div class="caption">Hand-drawn characters for the farm.</div>
+  </div>
+
+<div class="gallery-item">
+    <img src="images/IMG_3072.jpg" alt="farmer Development">
+    <div class="caption">Hand-drawn characters for the farm </div>
+    </div>
+
+
+</div>
+
+</body>
